@@ -51,5 +51,5 @@ VALUES (1, 1),  -- Descubrimiento en Marte → Ciencia
        (8, 8),  -- Crisis Financiera → Economía
        (8, 9);  -- Crisis Financiera → Internacional
 
-insert into users (username, password)
-values ('abi', '$2a$10$0nm5d8a9Rp7exLsguh/I1us0SKH89MIFS6qUvyGgtilxBuK4/9e.O');
+insert into users (username, full_name, password)
+values ('abi', 'Abisai Herrera', '$2a$10$0nm5d8a9Rp7exLsguh/I1us0SKH89MIFS6qUvyGgtilxBuK4/9e.O');
