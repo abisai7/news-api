@@ -1,3 +1,15 @@
+INSERT INTO categories (id, name)
+VALUES (1, 'Ciencia'),
+       (2, 'Tecnología'),
+       (3, 'Energía'),
+       (4, 'Paleontología'),
+       (5, 'Salud'),
+       (6, 'Medio Ambiente'),
+       (7, 'Deportes'),
+       (8, 'Economía'),
+       (9, 'Internacional'),
+       (10, 'Seguridad');
+
 INSERT INTO news (id, title, image, description, content)
 VALUES (1, 'Descubrimiento en Marte', 'mars_discovery.jpg', 'La NASA encuentra evidencia de agua en Marte.',
         'Científicos de la NASA han descubierto rastros de agua en la superficie marciana, lo que aumenta la posibilidad de vida en el planeta rojo.'),
@@ -16,6 +28,28 @@ VALUES (1, 'Descubrimiento en Marte', 'mars_discovery.jpg', 'La NASA encuentra e
         'Un corredor de Kenia ha batido el récord mundial de maratón, finalizando la carrera en un tiempo sin precedentes.'),
        (8, 'Crisis Financiera', 'financial_crisis.jpg', 'Los mercados colapsan tras caída de bolsa.',
         'La bolsa de valores sufrió una de sus peores caídas en la historia reciente, lo que ha generado preocupación a nivel global.');
+
+INSERT INTO news_categories (news_id, category_id)
+VALUES (1, 1),  -- Descubrimiento en Marte → Ciencia
+       (1, 9),  -- Descubrimiento en Marte → Internacional
+
+       (2, 2),  -- Avance en IA → Tecnología
+
+       (3, 3),  -- Revolución en Energía Solar → Energía
+       (3, 6),  -- Revolución en Energía Solar → Medio Ambiente
+
+       (4, 4),  -- Descubrimiento de Dinosaurio → Paleontología
+       (4, 1),  -- Descubrimiento de Dinosaurio → Ciencia
+
+       (5, 5),  -- Avance en Medicina → Salud
+
+       (6, 10), -- Explosión en Planta Nuclear → Seguridad
+       (6, 9),  -- Explosión en Planta Nuclear → Internacional
+
+       (7, 7),  -- Nuevo Récord en Deporte → Deportes
+
+       (8, 8),  -- Crisis Financiera → Economía
+       (8, 9);  -- Crisis Financiera → Internacional
 
 insert into users (username, password)
 values ('abi', '$2a$10$0nm5d8a9Rp7exLsguh/I1us0SKH89MIFS6qUvyGgtilxBuK4/9e.O');
