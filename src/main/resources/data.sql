@@ -33,14 +33,17 @@ INSERT INTO news_categories (news_id, category_id)
 VALUES (1, 1),  -- Descubrimiento en Marte → Ciencia
        (1, 9),  -- Descubrimiento en Marte → Internacional
 
+       (2, 1),  -- Avance en IA → Ciencia
        (2, 2),  -- Avance en IA → Tecnología
 
+       (3, 1),  -- Revolución en Energía Solar → Ciencia
        (3, 3),  -- Revolución en Energía Solar → Energía
        (3, 6),  -- Revolución en Energía Solar → Medio Ambiente
 
        (4, 4),  -- Descubrimiento de Dinosaurio → Paleontología
        (4, 1),  -- Descubrimiento de Dinosaurio → Ciencia
 
+       (5, 1),  -- Avance en Medicina → Ciencia
        (5, 5),  -- Avance en Medicina → Salud
 
        (6, 10), -- Explosión en Planta Nuclear → Seguridad
