@@ -13,7 +13,7 @@ Before running the project, ensure you have the following installed:
 ## Clone the Repository
 
 ```sh
- git clone https://github.com/your-username/newsapi.git
+ git clone https://github.com/abisai7/news-api.git
  cd newsapi
 ```
 
