@@ -2,6 +2,8 @@ package com.abidev.newsapi.services;
 
 import com.abidev.newsapi.entity.News;
 import com.abidev.newsapi.repository.NewsRepository;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 
@@ -15,8 +17,8 @@ public class NewsServiceImpl implements NewsService {
     }
 
     @Override
-    public Iterable<News> getAllNews() {
-        return newsRepository.findAll();
+    public Page<News> getPagedNews(Pageable pageable) {
+        return newsRepository.findAll(pageable);
     }
 
     @Override
