@@ -20,7 +20,7 @@ public class News {
 
     private String description;
 
-    @Lob
+    @Column(columnDefinition = "TEXT")
     private String content;
 
     @ManyToMany(fetch = FetchType.LAZY)
