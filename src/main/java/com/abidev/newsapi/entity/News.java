@@ -20,6 +20,7 @@ public class News {
 
     private String description;
 
+    @Lob
     private String content;
 
     @ManyToMany(fetch = FetchType.LAZY)
